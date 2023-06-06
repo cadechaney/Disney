@@ -1,0 +1,12 @@
+
+.header {
+  border: 2px solid red;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-image {
+  height: 85%;
+}
