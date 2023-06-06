@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from '../Header/Header'
+import './App.css'
 
 function App() {
   return (
     <>
-      <h1>Disney App</h1>
+      <Header />
     </>
   );
 }
