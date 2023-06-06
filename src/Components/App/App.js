@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <>
         <Header />
-        <MainPage />
+        <MainPage charactersDetails={this.state.characters} />
       </>
     );
   }
