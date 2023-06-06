@@ -5,7 +5,7 @@ function MainPage() {
 
   return (
     <> 
-    <p>main Page</p>
+      <p>main Page</p>
     </>
   )
 }
