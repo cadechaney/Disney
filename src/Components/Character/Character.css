@@ -1,5 +1,6 @@
 
 .character-card {
+  flex-basis: calc(100%/ 4);
   border: 2px solid blue;
   height: 40%;
   width: 20%;
@@ -13,7 +14,7 @@
 .character-details {
   height: 20%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }

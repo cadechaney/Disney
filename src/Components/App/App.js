@@ -38,6 +38,16 @@ class App extends Component {
           name: 'Lauren',
           imageUrl: "https://static.wikia.nocookie.net/disney/images/8/80/Profile_-_627.png"
         },
+        {
+          id: 4,
+          films: ['twilight'],
+          tvShows: ['Something about Rich Piana'],
+          videoGames: ['gta 5'],
+          allies: ['Cade', 'Jacob'],
+          enemies: ['only one'],
+          name: 'Lauren',
+          imageUrl: "https://static.wikia.nocookie.net/disney/images/8/80/Profile_-_627.png"
+        },
       ]
     }
   }
