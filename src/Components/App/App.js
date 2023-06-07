@@ -62,6 +62,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route path='/' render={() => <MainPage charactersDetails={this.state.characters} />} />
+          <Route path='/single' render={() => <h1>Single Card</h1>} />
         </Switch>
       </>
     );
