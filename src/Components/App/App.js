@@ -52,7 +52,8 @@ class App extends Component {
           imageUrl: "https://static.wikia.nocookie.net/disney/images/8/80/Profile_-_627.png"
         },
       ],
-      singleCharacterDetails: {}
+      singleCharacterDetails: {},
+      favorites: []
     }
   }
 
@@ -61,8 +62,25 @@ class App extends Component {
     console.log('character', findCharacter)
     this.setState({ singleCharacterDetails: findCharacter}, () => {
       console.log(this.state.singleCharacterDetails)
-
     })
+  }
+
+  checkFavorites = (arr, id) => {
+    return arr.some(char => char.id === id)
+  }
+
+  addFavorite = (id) => {
+    if(this.checkFavorites(this.state.favorites, id)) {
+      this.setState((prevState => ({ favorites: [prevState.favorites.filter(char => char.id !== id)]})), () => {
+        console.log('removed from favorites', this.state.favorites)
+      })
+    } else {
+      const findCharacter = this.state.characters.find(character => character.id === id)
+      console.log(findCharacter)
+      this.setState((prevState => ({ favorites: [...prevState.favorites, findCharacter]})), () => {
+        console.log('saved to favorites array', this.state.favorites)
+      })
+    }
   }
 
   render() {
@@ -71,7 +89,7 @@ class App extends Component {
       <>
         <Header />
         <Switch>
-          <Route path='/:id' render={({match}) => <CharacterDetails clickedCharacter={this.state.singleCharacterDetails} key={match.params.id} id={match.params.id} />} />
+          <Route path='/:id' render={({match}) => <CharacterDetails clickedCharacter={this.state.singleCharacterDetails} key={match.params.id} id={match.params.id} addFavorite={this.addFavorite} favoritesList={this.state.favorites} />} />
           <Route path='/' render={() => <MainPage charactersDetails={this.state.characters} viewCharacter={this.viewCharacter} />} />
         </Switch>
       </>

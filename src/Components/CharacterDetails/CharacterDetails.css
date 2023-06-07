@@ -1,0 +1,54 @@
+
+
+.single-char-container {
+  height: 85vh;
+  background-image: url('../../assets/MainPageBackground.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-star-container {
+  height: 50vh;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-portrait {
+  height: 80%;
+}
+
+.favorite-star {
+  height: 100%;
+}
+
+.favoriting-star-container {
+  background-color: red;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* transition: background-color 0.3s ease; */
+}
+
+.favoriting-star-container:target {
+  background-color: blue;
+}
+
+.single-character-details {
+  height: 35vh;
+  width: 30%;
+  margin-bottom: 1%;
+  border-radius: 20%;
+  background-color: #F9F9F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
