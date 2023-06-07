@@ -5,10 +5,12 @@ import './MainPage.css'
 function MainPage({charactersDetails}) {
   console.log(charactersDetails)
   const characters = charactersDetails.map(character => {
-    return (<Character key={character.id} id={character.id} tvShows={character.tvShows} name={character.name} imgURL={character.imageUrl} />)
+    return (<Character key={character.id} id={character.id} films={character.films}  name={character.name} imageUrl={character.imageUrl} />)
   })
   return (
-    characters
+    <div className='characters-container'>
+      {characters}
+    </div>
   )
 }
 

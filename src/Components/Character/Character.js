@@ -1,9 +1,17 @@
 import React from 'react'
+import './Character.css'
 
-function Character({id, tvShows, name, imgUrl}) {
-
+function Character({id, films, name, imageUrl}) {
+  
   return (
-    <p>{name}</p>
+    <div className='character-card' id={id}>
+      <img className='character-image' alt='Character Portrait' src={imageUrl}></img>
+      <div className='character-details'>
+        <h2>{name}</h2>
+        <p>Films: {films}</p>
+      </div>
+    </div>
+
   )
 }
 
