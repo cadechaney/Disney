@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+// import { Route, Switch } from 'react-router-dom'
 import Header from '../Header/Header'
 import MainPage from '../MainPage/MainPage'
 import './App.css'
+// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
@@ -58,7 +60,11 @@ class App extends Component {
     return (
       <>
         <Header />
-        <MainPage charactersDetails={this.state.characters} />
+        {/* <Switch> */}
+          {/* <Route exact path='/'> */}
+            <MainPage charactersDetails={this.state.characters} />
+          {/* </Route> */}
+        {/* </Switch> */}
       </>
     );
   }
