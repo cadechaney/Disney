@@ -1,5 +1,6 @@
 import React from 'react'
 import Character from '../Character/Character'
+import image from '../../assets/MainPageBackground.webp'
 import './MainPage.css'
 
 function MainPage({charactersDetails}) {
@@ -9,7 +10,10 @@ function MainPage({charactersDetails}) {
   })
   return (
     <div className='characters-container'>
+      <img className='background-image' src={image} alt='background image'></img>
+      <div className='overlay-content'>
       {characters}
+      </div>
     </div>
   )
 }
