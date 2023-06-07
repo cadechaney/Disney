@@ -59,9 +59,9 @@ class App extends Component {
 
   viewCharacter = (id) => {
     const findCharacter = this.state.characters.find(character => character.id === id)
-    console.log('character', findCharacter)
+    // console.log('character', findCharacter)
     this.setState({ singleCharacterDetails: findCharacter}, () => {
-      console.log(this.state.singleCharacterDetails)
+      // console.log(this.state.singleCharacterDetails)
     })
   }
 
@@ -71,12 +71,12 @@ class App extends Component {
 
   addFavorite = (id) => {
     if(this.checkFavorites(this.state.favorites, id)) {
-      this.setState((prevState => ({ favorites: [prevState.favorites.filter(char => char.id !== id)]})), () => {
+      this.setState((prevState => ({ favorites: prevState.favorites.filter(char => char.id !== id)})), () => {
         console.log('removed from favorites', this.state.favorites)
       })
     } else {
       const findCharacter = this.state.characters.find(character => character.id === id)
-      console.log(findCharacter)
+      // console.log(findCharacter)
       this.setState((prevState => ({ favorites: [...prevState.favorites, findCharacter]})), () => {
         console.log('saved to favorites array', this.state.favorites)
       })

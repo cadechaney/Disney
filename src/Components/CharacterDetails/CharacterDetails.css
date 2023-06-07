@@ -29,7 +29,8 @@
 }
 
 .favoriting-star-container {
-  background-color: red;
+  background-color: rgb(233, 50, 50);
+  border-radius: 40%;
   height: 15vh;
   position: absolute;
   top: 0;
