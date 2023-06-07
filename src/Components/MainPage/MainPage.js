@@ -3,10 +3,10 @@ import Character from '../Character/Character'
 import image from '../../assets/MainPageBackground.webp'
 import './MainPage.css'
 
-function MainPage({charactersDetails}) {
+function MainPage({charactersDetails, viewCharacter}) {
   console.log(charactersDetails)
   const characters = charactersDetails.map(character => {
-    return (<Character key={character.id} id={character.id} films={character.films}  name={character.name} imageUrl={character.imageUrl} />)
+    return (<Character key={character.id} id={character.id} films={character.films}  name={character.name} imageUrl={character.imageUrl}  viewCharacter={viewCharacter} />)
   })
   return (
     <div className='characters-container'>
