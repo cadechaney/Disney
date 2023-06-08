@@ -16,7 +16,7 @@ function FavoritesContainer({ favoritesDetails, viewCharacter}) {
     } else {
       const characters = favoritesDetails.map(char => {
         return (
-          <FavoriteCharacter key={char.id} id={char.id} films={char.films} tvShows={char.tvShows} videoGames={char.videoGames} 
+          <FavoriteCharacter key={char._id} id={char._id} films={char.films} tvShows={char.tvShows} videoGames={char.videoGames} 
           allies={char.allies} enemies={char.enemies} name={char.name} imageUrl={char.imageUrl} viewCharacter={viewCharacter} />
         )
       })

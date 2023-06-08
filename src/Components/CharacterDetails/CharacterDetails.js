@@ -5,7 +5,7 @@ import emptyStar from '../../assets/emptyStar.png'
 
 function CharacterDetails({clickedCharacter, addFavorite, favoritesList}) {
 
-// console.log('sdfaadfs', favoritesList)
+console.log('sdfaadfs', clickedCharacter)
   return (
     <div className='single-char-container'>
       <section className='image-star-container'>
