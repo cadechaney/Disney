@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Header from '../Header/Header'
 import MainPage from '../MainPage/MainPage'
 import CharacterDetails from '../CharacterDetails/CharacterDetails'
+import FavoritesContainer from '../Favorites/FavoritesContainer' 
 import './App.css'
 // import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -89,6 +90,7 @@ class App extends Component {
       <>
         <Header />
         <Switch>
+          <Route path='/favorites' render={() => <FavoritesContainer favoritesDetails={this.state.favorites} />}/>
           <Route path='/:id' render={({match}) => <CharacterDetails clickedCharacter={this.state.singleCharacterDetails} key={match.params.id} id={match.params.id} addFavorite={this.addFavorite} favoritesList={this.state.favorites} />} />
           <Route path='/' render={() => <MainPage charactersDetails={this.state.characters} viewCharacter={this.viewCharacter} />} />
         </Switch>
