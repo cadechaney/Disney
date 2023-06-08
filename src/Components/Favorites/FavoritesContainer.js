@@ -2,6 +2,7 @@ import React from 'react'
 import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
 
+
 function FavoritesContainer({ favoritesDetails }) {
   console.log(favoritesDetails)
   if(favoritesDetails.length === 0) {
@@ -12,8 +13,18 @@ function FavoritesContainer({ favoritesDetails }) {
       </section>
       )
     } else {
+      const characters = favoritesDetails.map(character => {
+        // return ()
+      })
       return (
-      <h1>you favorited {favoritesDetails.length} character/s</h1>
+      <h2>
+        You Have {favoritesDetails.length} Favorite{' '}
+        {favoritesDetails.length === 1 ? 'Character' : 'Characters'}
+        <div className='favorite-characters-container' >
+          {/* {favorites} */}
+        </div>
+      </h2>
+
     )
 
   }
