@@ -1,6 +1,5 @@
-
 import React from 'react'
-// import sadMickey from '../../assets/sadMickey.webp'
+import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
 
 function FavoritesContainer({ favoritesDetails }) {
@@ -8,9 +7,8 @@ function FavoritesContainer({ favoritesDetails }) {
   if(favoritesDetails.length === 0) {
     return (
       <section className='no-favorites-container'>
-        <img src={sadMickey} alt='Sad Mickey'></img>
-        <h1>You Have No Favorites</h1>
-
+        <img className='sad-mickey-image' src={sadMickey} alt='Sad Mickey'></img>
+        <h1 className='no-favorites-message'>You Have No Favorites</h1>
       </section>
       )
     } else {
