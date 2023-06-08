@@ -1,4 +1,3 @@
-
 .header {
   border: 2px solid red;
   height: 15vh;
@@ -7,6 +6,18 @@
   justify-content: space-around;
 }
 
+.view-favorites {
+  height: 90%;
+}
+
+.view-favorites:hover {
+  transform: scale(1.1);
+}
+
 .header-image {
   height: 85%;
+}
+
+.header-image:hover {
+  transform: scale(1.1);
 }

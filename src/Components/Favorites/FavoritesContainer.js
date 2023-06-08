@@ -1,9 +1,10 @@
 import React from 'react'
+import FavoriteCharacter from '../FavoriteCharacter/FavoriteCharacter'
 import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
+import imageBackground from '../../assets/MainPageBackground.webp'
 
-
-function FavoritesContainer({ favoritesDetails }) {
+function FavoritesContainer({ favoritesDetails, viewCharacter}) {
   console.log(favoritesDetails)
   if(favoritesDetails.length === 0) {
     return (
@@ -13,17 +14,25 @@ function FavoritesContainer({ favoritesDetails }) {
       </section>
       )
     } else {
-      const characters = favoritesDetails.map(character => {
-        // return ()
+      const characters = favoritesDetails.map(char => {
+        return (
+          <FavoriteCharacter key={char.id} id={char.id} films={char.films} tvShows={char.tvShows} videoGames={char.videoGames} 
+          allies={char.allies} enemies={char.enemies} name={char.name} imageUrl={char.imageUrl} viewCharacter={viewCharacter} />
+        )
       })
       return (
-      <h2>
-        You Have {favoritesDetails.length} Favorite{' '}
-        {favoritesDetails.length === 1 ? 'Character' : 'Characters'}
+        
         <div className='favorite-characters-container' >
-          {/* {favorites} */}
+          <img className='background-image-favorites' src={imageBackground} alt='background image'></img>
+          <h2 className='favorites-length'>
+            You Have {favoritesDetails.length} Favorite{' '}
+            {favoritesDetails.length === 1 ? 'Character' : 'Characters'}
+          </h2>
+          <div className='favorites-overlay'>
+            {characters}  
+          </div>
         </div>
-      </h2>
+        
 
     )
 

@@ -18,6 +18,41 @@
   z-index: -1;
 }
 
-.no-favorites-message {
+/* Favorites */
 
+.favorite-characters-container {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.background-image-favorites {
+  background-repeat: repeat;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.favorites-length {
+  position: relative;
+  z-index: 1;
+  height: 10%;
+}
+
+.favorites-overlay {
+  position: relative;
+  z-index: 1;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
