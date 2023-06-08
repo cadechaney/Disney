@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './FavoriteCharacter.css'
 
-function FavoriteCharacter({ id, films, tvShows, videoGames, allies, enemies, name, imageUrl}) {
+function FavoriteCharacter({ id, films, tvShows, videoGames, allies, enemies, name, imageUrl, viewCharacter}) {
 
   return (
     <div className='favorite-character-card' id={id}>
@@ -16,6 +17,11 @@ function FavoriteCharacter({ id, films, tvShows, videoGames, allies, enemies, na
           <h4>Video Games:{videoGames}</h4>
           <h4>Allies: {allies}</h4>
           <h4>Enemies: {enemies}</h4>
+          <div>
+            <Link to={`/${id}`} key={id}>
+              <button onClick={() => viewCharacter(id)}>View Info</button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

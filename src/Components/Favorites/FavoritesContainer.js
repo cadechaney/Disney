@@ -4,7 +4,7 @@ import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
 import imageBackground from '../../assets/MainPageBackground.webp'
 
-function FavoritesContainer({ favoritesDetails }) {
+function FavoritesContainer({ favoritesDetails, viewCharacter}) {
   console.log(favoritesDetails)
   if(favoritesDetails.length === 0) {
     return (
@@ -17,7 +17,7 @@ function FavoritesContainer({ favoritesDetails }) {
       const characters = favoritesDetails.map(char => {
         return (
           <FavoriteCharacter key={char.id} id={char.id} films={char.films} tvShows={char.tvShows} videoGames={char.videoGames} 
-          allies={char.allies} enemies={char.enemies} name={char.name} imageUrl={char.imageUrl} />
+          allies={char.allies} enemies={char.enemies} name={char.name} imageUrl={char.imageUrl} viewCharacter={viewCharacter} />
         )
       })
       return (

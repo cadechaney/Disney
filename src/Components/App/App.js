@@ -90,7 +90,7 @@ class App extends Component {
       <>
         <Header />
         <Switch>
-          <Route path='/favorites' render={() => <FavoritesContainer favoritesDetails={this.state.favorites} />}/>
+          <Route path='/favorites' render={() => <FavoritesContainer favoritesDetails={this.state.favorites} viewCharacter={this.viewCharacter}/>}/>
           <Route path='/:id' render={({match}) => <CharacterDetails clickedCharacter={this.state.singleCharacterDetails} key={match.params.id} id={match.params.id} addFavorite={this.addFavorite} favoritesList={this.state.favorites} />} />
           <Route path='/' render={() => <MainPage charactersDetails={this.state.characters} viewCharacter={this.viewCharacter} />} />
         </Switch>
