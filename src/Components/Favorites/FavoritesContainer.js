@@ -1,4 +1,5 @@
 import React from 'react'
+import FavoriteCharacter from '../FavoriteCharacter/FavoriteCharacter'
 import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
 
@@ -14,14 +15,16 @@ function FavoritesContainer({ favoritesDetails }) {
       )
     } else {
       const characters = favoritesDetails.map(character => {
-        // return ()
+        return (
+          <FavoriteCharacter />
+        )
       })
       return (
       <h2>
         You Have {favoritesDetails.length} Favorite{' '}
         {favoritesDetails.length === 1 ? 'Character' : 'Characters'}
         <div className='favorite-characters-container' >
-          {/* {favorites} */}
+          {characters}
         </div>
       </h2>
 
