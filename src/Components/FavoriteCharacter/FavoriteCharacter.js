@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import './FavoriteCharacter.css'
 
@@ -23,6 +24,19 @@ function FavoriteCharacter({ id, films, tvShows, name, imageUrl, viewCharacter})
       </section>
     </div>
   )
+}
+
+FavoriteCharacter.propTypes = {
+  id: PropTypes.number.isRequired,
+  films: PropTypes.arrayOf(
+    PropTypes.string
+  ),
+  tvShows: PropTypes.arrayOf(
+    PropTypes.string
+  ),
+  name: PropTypes.string,
+  imageUrl: PropTypes.string,
+  viewCharacter: PropTypes.func.isRequired
 }
 
 export default FavoriteCharacter

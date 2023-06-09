@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import './Character.css'
 
@@ -23,5 +24,16 @@ function Character({ _id, films, name, imageUrl, viewCharacter }) {
 
   )
 }
+
+Character.propTypes = {
+  _id: PropTypes.number,
+  films: PropTypes.arrayOf(
+    PropTypes.string
+  ),
+  name: PropTypes.string,
+  imageUrl: PropTypes.string,
+  viewCharacter: PropTypes.func.isRequired
+}
+
 
 export default Character

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import FavoriteCharacter from '../FavoriteCharacter/FavoriteCharacter'
 import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
@@ -32,11 +33,32 @@ function FavoritesContainer({ favoritesDetails, viewCharacter}) {
             {characters}  
           </div>
         </div>
-        
-
     )
-
   }
+}
+
+FavoritesContainer.propTypes = {
+  favoritesDetails: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.number.isRequired,
+    films: PropTypes.arrayOf(
+      PropTypes.string
+    ),
+    imageUrl: PropTypes.string,
+    tvShows: PropTypes.arrayOf(
+      PropTypes.string
+    ),
+    videoGames: PropTypes.arrayOf(
+      PropTypes.string
+    ),
+    allies: PropTypes.arrayOf(
+      PropTypes.string
+    ),
+    enemies: PropTypes.arrayOf(
+      PropTypes.string
+    )
+    })),
+    viewCharacter: PropTypes.func.isRequired
 }
 
 export default FavoritesContainer
