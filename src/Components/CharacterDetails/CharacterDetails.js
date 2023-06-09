@@ -17,11 +17,6 @@ console.log('sdfaadfs', clickedCharacter)
   ) : (
     <img className='favorite-star' alt='star' src={emptyStar} />
   )}
-
-
-          {/* {favoritesList.some(char => char.id === clickedCharacter.id) && <img className='favorite-star' alt='star' src={goldStar}></img>} */}
-          
-          {/* <img className='favorite-star' alt='star' src={emptyStar}></img> */}
         </div>
       </section>
       <section className='single-character-details'>
