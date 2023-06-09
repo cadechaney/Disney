@@ -160,13 +160,15 @@ __v: 0
 }
       ],
       singleCharacterDetails: {},
-      favorites: []
+      favorites: [],
+      err: ''
     }
   }
   
   componentDidMount = () => {
-  //   fetchCharacters()
-  //     .then(data => this.setState({ characters: data.data }))
+    // fetchCharacters()
+    //   .then(data => this.setState({ characters: data.data }))
+    //     .catch(() => {this.setState({ err: 'Refresh Page'})})
   }
 
  
@@ -198,7 +200,9 @@ __v: 0
   }
 
   render() {
-
+    if(this.state.err === 'Refresh Page') {
+      return (<h1>Refresh Page</h1>)
+    }
     return (
       <div className='app'>
         <Header />
