@@ -53,3 +53,46 @@
   justify-content: space-around;
   align-items: center;
 }
+
+@media (max-width: 905px) {
+  .favoriting-star-container {
+    height: 12vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .single-character-details {
+    width: 40%;
+  }
+  .character-portrait {
+    height: 70%;
+  }
+}
+
+@media (max-width: 660px) {
+  .single-character-details {
+    width: 50%;
+  }
+}
+
+@media (max-width: 625px) {
+  .character-portrait {
+    height: 65%;
+  }
+}
+
+@media (max-width: 540px) {
+  .single-character-details {
+    width: 60%;
+  }
+}
+
+@media (max-width: 465px) {
+  .character-portrait {
+    height: 50%;
+  }
+
+  .single-character-details {
+    width: 75%;
+  }
+}

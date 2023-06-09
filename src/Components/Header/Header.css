@@ -22,3 +22,13 @@
 .header-image:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 360px) {
+  .view-favorites {
+    height: 75%;
+  }
+
+  .header-image {
+    height: 75%;
+  }
+}

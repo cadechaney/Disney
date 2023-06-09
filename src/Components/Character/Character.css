@@ -40,3 +40,16 @@
   justify-content: space-evenly;
   align-items: center;
 } 
+
+@media (max-width: 530px) {
+  .character-card {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .character-card {
+    height: 20vh;
+    margin: .25%;
+  }
+}
