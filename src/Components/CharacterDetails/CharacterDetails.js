@@ -4,8 +4,14 @@ import goldStar from '../../assets/Gold_Star.svg-1.png'
 import emptyStar from '../../assets/emptyStar.png'
 
 function CharacterDetails({clickedCharacter, addFavorite, favoritesList}) {
+console.log(clickedCharacter)
+// const obj = {}
+if(Object.keys(clickedCharacter).length === 0) {
+  return (
+    <h1>Click the Castle to View Other Characters</h1>
+  )
+} else {
 
-console.log('sdfaadfs', clickedCharacter)
   return (
     <div className='single-char-container'>
       <section className='image-star-container'>
@@ -29,6 +35,7 @@ console.log('sdfaadfs', clickedCharacter)
       </section>
     </div>
   )
+}
 }
 
 export default CharacterDetails

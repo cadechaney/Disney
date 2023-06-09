@@ -164,12 +164,12 @@ __v: 0
     }
   }
   
-  // componentDidMount = () => {
+  componentDidMount = () => {
   //   fetchCharacters()
   //     .then(data => this.setState({ characters: data.data }))
-      
-      
-  // }
+  }
+
+ 
 
   viewCharacter = (_id) => {
     const findCharacter = this.state.characters.find(character => character._id === _id)
