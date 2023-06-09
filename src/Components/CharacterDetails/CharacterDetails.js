@@ -10,18 +10,13 @@ console.log('sdfaadfs', clickedCharacter)
     <div className='single-char-container'>
       <section className='image-star-container'>
         <img className='character-portrait' alt='Character Portrait' src={clickedCharacter.imageUrl}></img>
-        <div onClick={() => {addFavorite(clickedCharacter.id)}} className='favoriting-star-container'>
+        <div onClick={() => {addFavorite(clickedCharacter._id)}} className='favoriting-star-container'>
 
-        {favoritesList.find(char => char.id === clickedCharacter.id) ? (
+        {favoritesList.find(char => char._id === clickedCharacter._id) ? (
     <img className='favorite-star' alt='star' src={goldStar} />
   ) : (
     <img className='favorite-star' alt='star' src={emptyStar} />
   )}
-
-
-          {/* {favoritesList.some(char => char.id === clickedCharacter.id) && <img className='favorite-star' alt='star' src={goldStar}></img>} */}
-          
-          {/* <img className='favorite-star' alt='star' src={emptyStar}></img> */}
         </div>
       </section>
       <section className='single-character-details'>

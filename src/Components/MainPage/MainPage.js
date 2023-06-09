@@ -17,7 +17,9 @@ function MainPage({charactersDetails, viewCharacter}) {
   })
   return (
     <div className='characters-container' >
-      <img className='background-image' src={image} alt='background image'></img>
+      <div className='repeater-div' >
+        {/* <img className='background-image' src={image} alt='background image'></img> */}
+      </div>
       <div className='overlay-content'>
         {characters}
       </div>
