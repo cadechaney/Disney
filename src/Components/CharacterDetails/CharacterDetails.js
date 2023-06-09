@@ -39,7 +39,7 @@ if(Object.keys(clickedCharacter).length === 0) {
 
 CharacterDetails.propTypes = {
   clickedCharacter: PropTypes.shape({
-    _id: PropTypes.number,
+    _id: PropTypes.number.isRequired,
     films: PropTypes.arrayOf(
       PropTypes.string
     ),
@@ -60,7 +60,7 @@ CharacterDetails.propTypes = {
   addFavorite: PropTypes.func.isRequired,
   favoritesList: PropTypes.arrayOf(
     PropTypes.shape({
-      _id: PropTypes.number,
+      _id: PropTypes.number.isRequired,
     films: PropTypes.arrayOf(
       PropTypes.string
     ),
