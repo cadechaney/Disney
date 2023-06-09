@@ -1,5 +1,6 @@
 import React from 'react'
 import Character from '../Character/Character'
+import PropTypes from 'prop-types'
 import image from '../../assets/MainPageBackground.webp'
 import './MainPage.css'
 
@@ -25,6 +26,19 @@ function MainPage({charactersDetails, viewCharacter}) {
       </div>
     </div>
   )
+}
+
+MainPage.propTypes = {
+  charactersDetails: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.number,
+      films: PropTypes.arrayOf(
+        PropTypes.string
+      ),
+      name: PropTypes.string,
+      imageUrl: PropTypes.string,
+    })),
+  viewCharacter: PropTypes.func.isRequired
 }
 
 export default MainPage
