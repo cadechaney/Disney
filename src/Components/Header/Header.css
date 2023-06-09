@@ -1,5 +1,6 @@
 .header {
-  border: 2px solid red;
+  background-color: #97f9f9;
+  border: 2px solid gray;
   height: 15vh;
   display: flex;
   align-items: center;

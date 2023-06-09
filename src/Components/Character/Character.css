@@ -1,9 +1,9 @@
 
 .character-card {
+  margin: 1%;
   flex-basis: calc(100%/ 4);
-  border: 2px solid blue;
-  height: 40%;
-  width: 20%;
+  height: 30vh;
+  width: 20vw;
   perspective: 1000px;
 }
 
