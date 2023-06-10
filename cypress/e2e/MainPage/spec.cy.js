@@ -28,4 +28,16 @@ describe('template spec', () => {
     cy.get('h1').contains('Click the Castle to View Other Characters')
     .should('be.visible')
   })
+
+  it('should handle a bad fetch', () => {
+    cy.intercept('GET', 'https://api.disneyapi.dev/character?page=7&pageSize=50', { statusCode: 500 }).as('fetchRequest');
+    cy.visit('http://localhost:3000');
+  
+    cy.wait('@fetchRequest').then((interception) => {
+      expect(interception.response.statusCode).to.equal(500);
+    });
+    cy.get('h1').should('be.visible')
+    cy.get('h1').contains('Refresh Page')
+  });
+  
 })
