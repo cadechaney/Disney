@@ -10,7 +10,7 @@ function Header() {
   return (
     <div className='header'>
       <h1 className='app-title'>Disney Character Discovery</h1>
-      <div className='view-favorites'>
+      <div className='view-favorites' id='oswald'>
         <Link to={'/favorites'}>
           <img src={oswald} alt='Oswald waving/ view favorites' title='View Favorites' className='view-favorites'></img>
         </Link>
