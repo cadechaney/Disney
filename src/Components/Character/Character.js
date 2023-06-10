@@ -11,7 +11,7 @@ function Character({ _id, imageUrl, viewCharacter }) {
           <img className='character-image' alt='Character Portrait' src={imageUrl}></img>
           <div>
             <Link to={`/${_id}`} key={_id}>
-              <button onClick={() => viewCharacter(_id)} className='more-info-button' >More Info</button>
+              <button onClick={() => viewCharacter(_id)} className='more-info-button' > More Info </button>
             </Link>
           </div>
         </div>

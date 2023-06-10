@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import FavoriteCharacter from '../FavoriteCharacter/FavoriteCharacter'
 import './FavoritesContainer.css'
 import sadMickey from '../../assets/mickeymouse-sad.gif'
-import imageBackground from '../../assets/MainPageBackground.webp'
 
 function FavoritesContainer({ favoritesDetails, viewCharacter}) {
   console.log(favoritesDetails)
@@ -24,7 +23,6 @@ function FavoritesContainer({ favoritesDetails, viewCharacter}) {
       return (
         
         <div className='favorite-characters-container' >
-          {/* <img className='background-image-favorites' src={imageBackground} alt='background image'></img> */}
           <h2 className='favorites-length'>
             You Have {favoritesDetails.length} Favorite{' '}
             {favoritesDetails.length === 1 ? 'Character' : 'Characters'}
