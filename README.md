@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Disney Character Discovery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Time on this application will open you up to new interesting characters in the Disney Universe. This will bring you many new family movie night ideas or just learn the names of the characters you never noticed.
 
-## Available Scripts
+## Technologies:
 
-In the project directory, you can run:
+-React
+-Router
+-Cypress Testing
+-Excalidraw Wireframing
+-Api from https://api.disneyapi.dev/character
 
-### `npm start`
+### Application is Deployed live at:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://disney-henna.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Preview of App:
 
-### `npm test`
+![7ownh9](https://github.com/cadechaney/Disney/assets/121843832/11edc8d8-47b4-4b5e-b631-c5f0b9926c0d)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Discover your own characters here: https://disney-henna.vercel.app/
 
-### `npm run build`
+## Learning Goals:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Build a multi-page application using React Router, an api of my choosing, and a new technology
+-Put to practice everything I've learned about typescript
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges and Wins:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-I originally had the cards to be flipped on a hover effect. This didn't end up working with my learning goals of
+using cypress. To work through this I had to change the styling of my application, which ended up working out.
 
-### `npm run eject`
+## Future Feature Ideas:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-Bring back the card flip styling. Make outputs from the api filter through a default to avoid empty information on the DOM
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation Instructions:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-Clone down this repo
+-Install dependencies by using ‘npm install’ in your terminal within the root directory
+-To host website on your local machine, run ’npm start’ in terminal
+-A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Testing Instructions:
 
-## Learn More
+To run the test suite associated with the classes behind the scenes and how they interact: Run 'npm run cypress' from the terminal while within the main directory of the application and select E2E Testing, and your chosen browser in the following window.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
