@@ -24,7 +24,7 @@ function FavoritesContainer({ favoritesDetails, viewCharacter}) {
       return (
         
         <div className='favorite-characters-container' >
-          <img className='background-image-favorites' src={imageBackground} alt='background image'></img>
+          {/* <img className='background-image-favorites' src={imageBackground} alt='background image'></img> */}
           <h2 className='favorites-length'>
             You Have {favoritesDetails.length} Favorite{' '}
             {favoritesDetails.length === 1 ? 'Character' : 'Characters'}
