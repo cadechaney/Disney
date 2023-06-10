@@ -17,7 +17,7 @@ function FavoriteCharacter({ id, films, tvShows, name, imageUrl, viewCharacter})
           <h4>TV Shows: {tvShows}</h4>
           <div>
             <Link to={`/${id}`} key={id}>
-              <button onClick={() => viewCharacter(id)}>View Info</button>
+              <button onClick={() => viewCharacter(id)}>View Info </button>
             </Link>
           </div>
         </div>

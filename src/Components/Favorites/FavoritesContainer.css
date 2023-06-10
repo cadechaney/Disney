@@ -41,15 +41,10 @@
 }
 
 .favorites-length {
-  position: relative;
-  z-index: 1;
   height: 10%;
 }
 
 .favorites-overlay {
-  position: relative;
-  z-index: 1;
-  height: 90%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
